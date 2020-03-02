@@ -1,0 +1,12 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+header{
+	height: 80px;
+}
+.margenes{
+	width: 80%;
+	margin: auto;
+}
