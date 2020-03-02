@@ -6,7 +6,6 @@
 }
 header{
 	height: 80px;
-	border-bottom: 1px black solid;
 	padding: 10px 0;
 }
 .margenes{
@@ -116,4 +115,13 @@ body{
 body{
 	background: gray;
 }
+}
+@media print{
+	body{
+		background: white;
+
+	}
+	#banner{
+		display: none;
+	}
 }
