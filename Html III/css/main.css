@@ -18,7 +18,7 @@ figure{
 	float: left;
 }
 figure img{
-	width: 100%;
+	width: 80%;
 }
 nav{
 	float: right;
@@ -69,8 +69,8 @@ h1 +a{
 	text-align: center;
 }
 .servicios-contenedor{
-	width: 200px;
-	height: 220px;
+	width: 22%;/*ancho con porcentaje*/
+	height: 220px;/*altura con px*/
 	float: left;
 	margin: 20px;
 	text-align: center;
@@ -98,4 +98,22 @@ background:#B285FF;
 	width: 50%;
 	position: relative;
 	top: 30px;
+}
+/*Telefono*/
+@media(min-width: 320px){
+body{
+	background: yellow;
+}
+}
+/*Tablet*/
+@media(min-width: 480px){
+body{
+	background:blue;
+}
+}
+/*Escritorio*/
+@media(min-width: 768px){
+body{
+	background: gray;
+}
 }
