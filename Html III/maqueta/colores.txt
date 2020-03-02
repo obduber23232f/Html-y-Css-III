@@ -1,0 +1,6 @@
+COLORES:
+ morado principal: #796AD9 | rgba(121,106,217,1)
+ amarillo: #FFD770
+ azul: #89D9E8
+ rosado: #E15FE8
+ morado (servicio): #B285FF
