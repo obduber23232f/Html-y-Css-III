@@ -116,12 +116,23 @@ body{
 	background: gray;
 }
 }
-@media print{
+
+@media print and (min-width: 320px){
+	body{
+		background: silver;
+	}
+}
+@media print and (min-width: 468px) and (max-width: 1200px;){
 	body{
 		background: white;
 
 	}
 	#banner{
 		display: none;
+	}
+}
+@media (min-width: 200px) and (max-width: 319px){
+	body{
+		background: green;
 	}
 }
