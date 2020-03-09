@@ -12,22 +12,9 @@ header{
 	width: 80%;
 	margin: auto;
 }
-figure{
-	width: 5%;
-	float: left;
-}
 figure img{
 	width: 80%;
 }
-nav{
-	float: right;
-	position: relative;
-	top: 25px;
-}
-nav li{
-	display: inline-block;
-	margin: 5px;
-} 
 nav li a{
 	text-decoration: none;
 	color: #333333;
@@ -64,14 +51,26 @@ h1 +a{
 #servicios{
 	padding: 2em;
 }
-#servicios > h2{
-	text-align: center;
-}
+
 .servicios-contenedor{
-	width: 22%;/*ancho con porcentaje*/
 	height: 220px;/*altura con px*/
+	margin: 5px;
+	text-align: center;
 	float: left;
-	margin: 20px;
+}
+.servicios-icono{
+	background: white;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+.servicios-icono img{
+	width: 50%;
+	position: relative;
+	top: 30px;
+}
+#servicios > h2{
 	text-align: center;
 }
 .servicios-contenedor:nth-child(2){
@@ -86,41 +85,85 @@ background: #E15FE8;
 .servicios-contenedor:nth-child(5){
 background:#B285FF; 
 }
-.servicios-icono{
-	background: white;
-	width: 120px;
-	height: 120px;
-	border-radius: 50%;
-	margin: 20px auto;
-}
-.servicios-icono img{
-	width: 50%;
-	position: relative;
-	top: 30px;
-}
+
 /*Telefono*/
 @media(min-width: 320px){
-body{
-	background: yellow;
+	body{
+		background: yellow;
+	}
+	header{
+		height: 300px;
+		text-align: center;
+	}
+	figure{
+		width: 70%;
+		float: none;
+		margin: auto;
+	}
+	nav li{
+		display: block;
+		margin: 10px;
+	}
+	nav{
+		float: none;
+		position: relative;
+		top: 25px;
+	}
+	.servicios-contenedor{
+		width: 100%;/*ancho con porcentaje*/
+	}
 }
-header{
-	height: 80px;
-}
-}
+
 /*Tablet*/
 @media(min-width: 480px){
-body{
-	background:blue;
-}
+	body{
+		background:blue;
+	}
+	header{
+		height: 80px;
+		text-align: left;
+	}
+	figure{
+		width: 10%;
+		float: left;
+	}
+	nav{
+		float: right;
+	}
+	nav li{
+		display: inline-block;
+	}
+	.servicios-contenedor{
+		width:40%;/*altura con px*/
+	}
+
 }
 /*Escritorio*/
 @media(min-width: 768px){
-body{
-	background: gray;
-}
-header{
-	height: 80px;
-}
+	body{
+		background: gray;
+	}
+	header{
+		height: 80px;
+		text-align: left;
+	}
+	figure{
+		width: 10%;
+		float: left;
+	}
+	nav li{
+		display: inline-block;
+		margin: 5px;
+	}
+	nav{
+		float: right;
+		position: relative;
+		top: 25px;
+	} 
+	.servicios-contenedor{
+		width: 22%;/*ancho con porcentaje*/
+		
+	}
 }
 
 @media print and (min-width: 320px){
