@@ -1,0 +1,169 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: sans-serif;
+}
+header{
+	padding: 10px 0;
+}
+.margenes{
+	width: 80%;
+	margin: auto;
+}
+figure img{
+	width: 80%;
+}
+nav{
+	position: relative;
+	top: 25px;
+}
+nav li{
+	margin: 5px;
+}
+nav li a{
+	text-decoration: none;
+	color: #333333;
+}
+#banner{
+	background-image: url("../img/banner-1.jpeg");
+	background-attachment: fixed;
+	background-size: cover;
+	height: 300px;
+}
+.banner-fondo{
+	height: 100%;
+	background: rgba(121,106,217,.5);
+}
+.banner-titulo{
+	text-align: center;
+	position: relative;
+	top: 70px;
+}
+.banner-titulo h1{
+	font-size: 70px;
+	color: white;
+	margin-bottom: 10px;
+}
+h1 + a{
+	background: #FFD770;
+	padding: 15px 20px;
+	color: #333333;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+}
+#servicios{
+	padding: 2em;
+}
+#servicios h2{
+	text-align: center;
+}
+.servicios-contenedor{
+	height: 220px;
+	float: left;
+	margin: 20px 10px;
+	text-align: center;
+}
+.servicios-contenedor:nth-child(2){
+	background: #FFD770;
+}
+.servicios-contenedor:nth-child(3){
+	background: #89D9E8;
+}
+.servicios-contenedor:nth-child(4){
+	background: #E15FE8;
+}
+.servicios-contenedor:nth-child(5){
+	background: #B285FF;
+}
+.servicios-icono{
+	background: white;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	margin: 20px auto;
+}
+.servicios-icono img{
+	width: 50%;
+	position: relative;
+	top: 30px;
+}
+/*Teléfono*/
+@media(min-width: 320px){
+	body{
+		background: yellow;
+	}
+	header{
+		height: 300px;
+		text-align: center;
+	}
+	figure{
+		width: 70%;
+		float: none;
+		margin: auto;
+	}
+	nav{
+		float: none;
+	}
+	nav li{
+		display: block;
+	}
+	.servicios-contenedor{
+		width: 90%;
+	}
+}
+/*Tablet*/
+@media(min-width: 480px){
+	body{
+		background: blue;
+	}
+	header{
+		height: 80px;
+		text-align: left;
+	}
+	figure{
+		width: 10%;
+		float: left;
+	}
+	nav{
+		float: right;
+	}
+	nav li{
+		display: inline-block;
+	}
+	.servicios-contenedor{
+		width: 45%;
+	}
+}
+/*Escritorio*/
+@media(min-width: 768px){
+	body{
+		background: pink;
+	}
+	.servicios-contenedor{
+		width: 22%;
+	}
+}
+
+
+@media print and (min-width: 320px){
+	body{
+		background: silver;
+	}
+}
+
+@media print and (max-width: 1200px){
+	body{
+		background: white;
+	}
+	#banner{
+		display: none;
+	}
+}
+
+@media (min-width: 200px) and (max-width: 319px){
+	body{
+		background: green;
+	}
+}
