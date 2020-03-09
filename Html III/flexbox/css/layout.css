@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.contenedor {
+  width: 60%;
+  background: silver;
+  margin: 5% auto;
+}
