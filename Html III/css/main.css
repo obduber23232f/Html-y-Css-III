@@ -5,7 +5,7 @@
 	font-family: sans-serif;
 }
 header{
-	height: 80px;
+	
 	padding: 10px 0;
 }
 .margenes{
@@ -103,6 +103,9 @@ background:#B285FF;
 body{
 	background: yellow;
 }
+header{
+	height: 80px;
+}
 }
 /*Tablet*/
 @media(min-width: 480px){
@@ -114,6 +117,9 @@ body{
 @media(min-width: 768px){
 body{
 	background: gray;
+}
+header{
+	height: 80px;
 }
 }
 
